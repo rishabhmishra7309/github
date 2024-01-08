@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .im1{
+            height: 638px;
+            width: 50%;
+           
+        }
+        .im2{
+            height: 638px;
+            width: 50%;
+            float: right;
+        }
+        h1{
+            position:absolute;
+           top: 200px;
+           left:250px;
+            color: white;
+            font-size: 3em;
+    }
+        h2{
+            
+            position:absolute;
+            top: 200px;
+            left: 780px;
+            color: white;
+            font-size: 3em;
+        }
+        #bt1{
+            position: absolute;
+            bottom: 300px;
+            left: 250px;
+            background-color: transparent;
+            color: white;
+            padding: 5px;
+            font-size: 1.5em;
+            border-radius: 10px;
+            width: 200px;
+        }
+        #bt2{
+            position: absolute;
+            bottom: 300px;
+            left: 800px;
+            background-color: transparent;
+            color: white;
+            font-size: 1.5em;
+            border-radius:10px;
+            width: 200px;
+            padding: 5px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div >
+            <h1 id="hee">Playstation 5</h1>
+            <h2 id="he">XBox Series X</h2>
+            <img class="im1" onclick="btn1()" id="iim1" src="kk.jpg" alt="">
+            <img class="im2" id="iim2" onclick="btn2()" src="dd.jpg" alt="">
+        </div>
+        <button id="bt1" onclick="btn1()">Buy Now</button>
+        <button id="bt2" onclick="btn2()">Buy Now</button>
+    </div>
+    <script>
+        function btn1(){
+            document.getElementById('bt1').style.backgroundColor="blue";
+            document.getElementById('bt2').style.backgroundColor="transparent";
+            document.getElementById('iim1').style.width="75%";
+            document.getElementById('iim2').style.width="25%";
+            document.getElementById('bt2').style.left="1050px";
+            document.getElementById('he').style.left="1030px";
+            document.getElementById('bt1').style.left="250px";
+            document.getElementById('hee').style.left="250px";
+            document.getElementById('iim2').style.transition="5s";
+            document.getElementById('iim1').style.transition="5s";
+            document.getElementById('bt2').style.transition="5s";
+            document.getElementById('he').style.transition="5s";
+            document.getElementById('bt1').style.transition="5s";
+            document.getElementById('hee').style.transition="5s";
+        }
+        function btn2(){
+            document.getElementById('bt2').style.backgroundColor="green ";
+            document.getElementById('bt1').style.backgroundColor="transparent";
+            document.getElementById('iim2').style.width="75%";
+              document.getElementById('iim1').style.width="25%";
+            document.getElementById('bt1').style.left="50px";
+            document.getElementById('hee').style.left="50px";
+            document.getElementById('bt2').style.left="800px";
+            document.getElementById('he').style.left="780px";
+            document.getElementById('iim2').style.transition="5s";
+            document.getElementById('iim1').style.transition="5s";
+            document.getElementById('bt1').style.transition="5s";
+            document.getElementById('hee').style.transition="5s";
+            document.getElementById('bt2').style.transition="5s";
+            document.getElementById('he').style.transition="5s";
+        }
+    </script>
+</body>
+</html>
